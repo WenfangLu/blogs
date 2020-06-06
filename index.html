@@ -4,10 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./src/css/bootstrap-grid.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <title>Lu WenFang Personal WebSite</title>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    
+    <div id="whole-page">
+        <div class="container-wrap"><div>
+            <aside id="aside">
+                <div class="text-center author-img-container">
+                    <div class="author-img">
+
+                    </div>
+                    <h1 class="logo">
+                        <a href="index.html">
+                            LU WENFANG
+                        </a>
+                    </h1>
+                    <span class="position">
+                        <a href="#">Full Stack</a>
+                        Web Developer In Taiwan
+                    </span>
+                </div>
+                <nav id="aside-main-menu" class="navbar">
+                    <div id="navbar">
+                        <ul>
+                            <li class="pointer m-1">
+                                <div id='li-home' class="pointer" onclick="smoothScroll(document.getElementById('home'))">HOME</div>
+                                <!-- <a href="">HOME</a>     -->
+                            </li>
+                            <li class="pointer m-1">
+                                <div id='li-about' class="pointer" onclick="smoothScroll(document.getElementById('about'))">ABOUT</div>
+                            </li>
+                            <li class="pointer m-1">
+                                <div id='li-skill' class="pointer" onclick="smoothScroll(document.getElementById('skill'))">SKILL</div>
+                            </li>
+                            <li class="pointer m-1">
+                                <div id='li-work' class="pointer" onclick="smoothScroll(document.getElementById('work'))">WORK</div>
+                                <!-- <a href="#" onclick="smoothScroll(document.getElementById('work'))">WORK</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+            <div class="div-main-contents">
+                <section id="home" class="home">
+                    <div class="home-content d-flex">
+                        <div class="home-content-intro">
+                            <h1>
+                                Hi!<br>
+                                I'm Wenfang
+                            </h1>
+                            <h2 class="intro-sub-text">
+                                love coding, traveling, and food
+                            </h2>
+                        </div>
+                    </div>
+                </section>
+                <section id="about" class="about">
+                    <div class="about-content-intro">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span class="intro-heading-meta">ABOUT</span>
+                                <h2 class="heading">WHO AM I?</h2>
+                                <p><strong>Hi, I'm Lu Wenfang.</strong>
+                                    On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row skill-set">
+                            <div class="col-md-3 skill-box skill-box-1 col-12 col-sm-6">
+                                <span>Geospatial Analysis</span>
+                                <div class="skill-box-img-container"><img src="src/img/about/geospatial-analysis.png" /></div>
+                            </div>
+                            <div class="col-md-3 skill-box skill-box-2 col-12 col-sm-6">
+                                <span>Web Development</span>
+                                <div class="skill-box-img-container"><img src="src/img/about/web-development.png" /></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="skill" class="skill">
+                    <div class="skill-content-intro">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span class="intro-heading-meta">MY SPECIALITY</span>
+                                <h2 class="heading">MY SKILLS</h2>
+                                <div>
+                                    <div class="prograss-bar-wrapper-text"><h3>SQL</h3></div>
+                                    <div class="prograss-bar-wrapper">
+                                        <div class="prograss" id="prograss-bar-1">
+
+                                        </div>
+                                    </div>
+                                    <div class="prograss-bar-wrapper-text"><h3>JavaScript</h3></div>
+                                    <div class="prograss-bar-wrapper">
+                                        <div class="prograss" id="prograss-bar-2">
+
+                                        </div>
+                                    </div>
+                                    <div class="prograss-bar-wrapper-text"><h3>Vue.js</h3></div>
+                                    <div class="prograss-bar-wrapper">
+                                        <div class="prograss" id="prograss-bar-3">
+
+                                        </div>
+                                    </div>
+                                    <div class="prograss-bar-wrapper-text"><h3>SQL(MSSQL)</h3></div>
+                                    <div class="prograss-bar-wrapper">
+                                        <div class="prograss" id="prograss-bar-4">
+
+                                        </div>
+                                    </div>
+                                    <div class="prograss-bar-wrapper-text"><h3>C Sharp</h3></div>
+                                        <div class="prograss-bar-wrapper">
+                                            <div class="prograss" id="prograss-bar-5">
+
+                                            </div>
+                                        </div>
+                                    <!-- <div class="prograss-bar-wrapper">
+
+                                    </div>
+                                    <div class="prograss-bar-wrapper">
+
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </section>
+                <section id="work" class="work">
+                    <div class="work-content-intro">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                <span class="intro-heading-meta">WORK</span>
+                                <h2 class="heading">RECENT PROJECTS</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="src/img/projects/egis.png" class="card-img-top" alt="EGIS WebSite">
+                                    <div class="card-body">
+                                        <h5 class="card-title">EgisWeb</h5>
+                                        <p class="card-text">A website mainly shows the analysis And visualization of economics data based Ministry of Economics Affairs, Taiwan with geographic approach. </p>
+                                        <a href="http://egis.moea.gov.tw/EgisWeb/" class="btn btn-primary">Go to Website</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="src/img/projects/banksinopac.png" class="card-img-top" alt="EGIS WebSite">
+                                    <div class="card-body">
+                                        <h5 class="card-title">House Valuation System</h5>
+                                        <p class="card-text">A website helps members in the department for house mortgage to do advanced analysis with the visualization of house data,point of interest, and diverse map layers such as faults in a efficient way</p>
+                                        <a href="#" class="btn btn-primary">Watch Demo Video</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            
+                        </div>
+                       
+
+                        
+                    </div>
+
+                    
+
+                </section>
+                
+            </div>
+        </div>
+        
+    </div>
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/bootstrap.min.js"></script>
+    <script src="./src/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
