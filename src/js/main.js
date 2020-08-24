@@ -26,3 +26,50 @@ window.smoothScroll = function(target){
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+/********************************************************** 
+ * 事件開始
+ *  *******************************************************/
+var Event_clickBankVideo = function(){
+    //   var dom = document.getElementById("banksinopacvideo");
+    //   dom.style.display = "block";
+    //   $("#myVideo").get(0).play();
+}
+
+var Event_clickcloseVideoBtn= function(){
+    var dom = document.getElementsByClassName("closeVideoBtn")[0]
+    dom.onclick = function(){
+        var dom = document.getElementById("banksinopacvideo");
+        var video = document.getElementById("myVideo");
+        video.pause();
+        video.currentTime = 0;
+        dom.style.display = "none";
+    }
+     
+
+}
+
+var Event_clickWatchBankVideoBtn =function(){
+    
+    var dom = document.getElementById("watchBankVideoBtn");
+    dom.onclick = function(){
+        var dom = document.getElementById("banksinopacvideo");
+        dom.style.display = "block";
+        $("#myVideo").get(0).play();
+    }
+    
+}
+
+/********************************************************** 
+ * 事件結束
+ *  *******************************************************/
+/********************************************************** 
+ * 事件註冊開始
+ *  *******************************************************/
+ Event_clickBankVideo();
+ Event_clickcloseVideoBtn();
+ Event_clickWatchBankVideoBtn();
+ 
