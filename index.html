@@ -12,6 +12,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -34,6 +35,10 @@
         <a data-scroll class="hov-color-green" href="#about">ABOUT</a>
         <a data-scroll class="hov-color-blue" href="#skill">SKILL</a>
         <a data-scroll class="hov-color-green" href="#work">WORK</a>
+        <a class="" href="src/files/LuWenFang-cv.pdf" target="_blank">CV</a>
+        <a class="pointer" href="https://www.linkedin.com/in/wen-fang-lu/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a class="pointer" href="https://www.facebook.com/miraclezag" target="_blank"><i class="fa fa-facebook-square"></i></i></a>
+ 
       </nav>
       <section id="home" class="wide">
         
@@ -145,42 +150,57 @@
                 </div>
             </div>
            
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                    <div class="card" style="width: 18rem;">
-                        <img src="src/img/projects/egis.png" class="card-img-top" alt="EGIS WebSite">
-                        <div class="card-body">
-                            <h5 class="card-title">EgisWeb</h5>
-                            <p class="card-text">A website mainly shows the spatial analysis asnd visualization of economics data based Ministry of Economics Affairs, Taiwan with geographic approach. </p>
-                            <a href="http://egis.moea.gov.tw/EgisWeb/" target="_blank" class="btn btn-primary">Go to Website</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="row d-flex justify-content-around mb-2">
+                <div class="">
                     <div class="card" style="width: 18rem;">
                         <img src="src/img/projects/banksinopac.png" class="card-img-top" alt="EGIS WebSite">
                         <div class="card-body">
                             <h5 class="card-title">House Valuation System</h5>
                             <p class="card-text">A website helps the bank do advanced analysis with the visualization of house data,point of interest, and diverse map layers such as faults in a efficient way</p>
-                            <div class="btn btn-primary" id="watchBankVideoBtn">Watch Demo Video</div>
+                            <a href="#work" class="btn btn-primary" id="watchBankVideoBtn">Watch Demo Video</a>
                         </div>
                     </div>
                 </div>
+                <div class="">
+                    <div class="card" style="width: 18rem;">
+                        <img src="src/img/projects/aerial.png" class="card-img-top" alt="EGIS WebSite">
+                        <div class="card-body">
+                            <h5 class="card-title">Aerial Image Interpretation GIS System</h5>
+                            <p class="card-text">A project helps our customer to analyze spatio-temporal data, integrating WMTS layers, WMS layers, and aerial images from Aerial Survey Office, Forestry
+                            Bureau, which has the largest and complete spatial database in Taiwan.</p>
+                        </div>
+                    </div>
+                </div>
+               
+                
+                
 
             </div>
 
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="row d-flex justify-content-around">
+                <div class="">
                     <div class="card" style="width: 18rem;">
                         <img src="src/img/projects/3d.png" class="card-img-top" alt="EGIS WebSite">
                         <div class="card-body">
                             <h5 class="card-title">3D Visualization</h5>
                             <p class="card-text">A project using ArcGIS API to display earthquakes both in two-dimensional and three-dimensional space  </p>
-                            <a href="https://wenfanglu.github.io/3DArcgisTest/3D.html" class="btn btn-primary">Go to Website</a>
+                            <a href="https://wenfanglu.github.io/3DArcgisTest/3D.html" target="_blank" class="btn btn-primary">Go to Website</a>
                         </div>
                     </div>
                 </div>
+                <div class="">
+                    <div class="card" style="width: 18rem;">
+                        <img src="src/img/projects/egis.png" class="card-img-top" alt="EGIS WebSite">
+                        <div class="card-body">
+                            <h5 class="card-title">EgisWeb</h5>
+                            <p class="card-text">
+                                The website collects all Taiwan’s industry information and important energy statistics information owned by various units of the Ministry of Economic Affairs. The system website presents the data and the results of function development through spatial visualization, so that the data can be used and displayed more conveniently </p>
+                            <a href="http://egis.moea.gov.tw/EgisWeb/" target="_blank" class="btn btn-primary">Go to Website</a>
+                        </div>
+                    </div>
+                </div>
+               
+                
             </div>  
         </div>
 
@@ -199,6 +219,8 @@
     $('html, body').animate({
       scrollTop: $section.offset().top
     }, 500);
+    $section.selector.includes("skill") && ($(".prograss").addClass("active"))
+    !$section.selector.includes("skill") && ($(".prograss").removeClass("active"))
   }
   $('[data-scroll]').on('click', scrollToSection);
     }(jQuery));

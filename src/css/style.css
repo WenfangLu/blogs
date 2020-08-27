@@ -68,7 +68,7 @@ background-color: #c8eafa;
 position: absolute;
 left: -92px;
 top: 164px;
-background-image: url(../src/img/author-img.jpg);
+background-image: url(../img/author-img.jpg);
 width: 550px;
 height: 498px;
 content: '';
@@ -219,6 +219,13 @@ height: 6px;
 border-radius: 10px;
 
 }
+#skill .prograss-bar-wrapper .prograss.active{
+    height: 6px;
+    border-radius: 10px;
+    -webkit-animation: prograss-bar-1 3s ease-in-out;
+    -webkit-animation-fill-mode:both; 
+-moz-animation-fill-mode:both; 
+}
 
 #skill .prograss-bar-wrapper .prograss#prograss-bar-1{
 background: #2c98f0;
@@ -346,7 +353,7 @@ width: 25px;
 position: relative;
 left: 99%;
 top: -5px;
-background-image: url("../src/img/cancel.svg");
+background-image: url("../img/cancel.svg");
 background-position: center;
 background-size: cover;
 cursor: pointer;
